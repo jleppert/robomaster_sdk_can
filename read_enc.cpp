@@ -28,7 +28,11 @@ void cb_attitude(const metadata&, const attitude& attitude)
 
 void cb_wheel_enc(const metadata&, const wheel_encoders& wheel_encoders)
 {
-    std::cout << "ENC RPM " << static_cast<int>(wheel_encoders.rpm[0]) << "\n";
+    std::cout << "ENC RPM 0:  " << static_cast<int>(wheel_encoders.rpm[0]) << "\n";
+    std::cout << "ENC RPM 1:  " << static_cast<int>(wheel_encoders.rpm[1]) << "\n";
+    std::cout << "ENC RPM 2:  " << static_cast<int>(wheel_encoders.rpm[2]) << "\n";
+    std::cout << "ENC RPM 3:  " << static_cast<int>(wheel_encoders.rpm[3]) << "\n";
+
 }
 
 void cb_imu(const metadata&, const imu& imu)
